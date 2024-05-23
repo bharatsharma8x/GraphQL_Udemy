@@ -53,3 +53,19 @@ If you want to pass the informantion to the all types, just write it in the cont
             fullName
         }
     }
+
+## Video 16 Custom Types
+    Created a Cutome Type to retrive data
+    Run this via postman
+        {
+            author(id: 1){
+                first_name
+                lastName
+                isAlive
+                fullName
+                coordinates {
+                    longitude
+                    latitude
+                }
+            }   
+        }
