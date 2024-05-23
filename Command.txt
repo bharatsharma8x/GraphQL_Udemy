@@ -1,0 +1,2 @@
+# this will install bunch of files for graphql
+rails g graphql:install
