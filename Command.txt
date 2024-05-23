@@ -1,9 +1,13 @@
 # this will install bunch of files for graphql
 rails g graphql:install
 
-Video 10 
+## Video 10 Query Argument
 Run this in postman on route POST : http://localhost:3000/graphql
 
 {
     testField(name: "Bharat")
 }
+
+## Video 11 Query Context
+graphql_controller :- Entry point for all the requests
+If you want to pass the informantion to the all types, just write it in the context that will be accessible to all.

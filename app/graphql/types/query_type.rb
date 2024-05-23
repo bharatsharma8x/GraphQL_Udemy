@@ -28,6 +28,7 @@ module Types
       end
 
     def test_field(name:)   #resolver
+      Rails.logger.info context[:time]
       "Hello #{name} !"
     end
 
