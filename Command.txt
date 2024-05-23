@@ -1,2 +1,9 @@
 # this will install bunch of files for graphql
 rails g graphql:install
+
+Video 10 
+Run this in postman on route POST : http://localhost:3000/graphql
+
+{
+    testField(name: "Bharat")
+}

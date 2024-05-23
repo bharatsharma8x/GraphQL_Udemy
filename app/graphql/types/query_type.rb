@@ -23,10 +23,12 @@ module Types
 
     # TODO: remove me
     field :test_field, String, null: false,                      #null means it is not possible that it will return nil value and "String" specifies that it will return a string
-      description: "An example field added by the generator"
+      description: "An example field added by the generator" do
+        argument :name, String, required: true
+      end
 
-    def test_field    #resolver
-      "Hello World!"
+    def test_field(name:)   #resolver
+      "Hello #{name} !"
     end
 
   end
