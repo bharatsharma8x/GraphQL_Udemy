@@ -37,3 +37,19 @@ If you want to pass the informantion to the all types, just write it in the cont
     OLD :- not found in latest
     GraphQL::Types::ISO8601DateTime
     GraphQL::Types::ISO8601Date
+
+
+## Video 15 Active Record fields
+    Add a custome field to retrive 
+    so it can be done with two ways
+    1. create a method to the respected model that will help to be accessible to other also
+    2. create a resolver to the Type defination 
+    3. Run this via postman
+    {
+        author(id: 1){
+            first_name
+            lastName
+            isAlive
+            fullName
+        }
+    }
