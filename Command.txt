@@ -11,3 +11,18 @@ Run this in postman on route POST : http://localhost:3000/graphql
 ## Video 11 Query Context
 graphql_controller :- Entry point for all the requests
 If you want to pass the informantion to the all types, just write it in the context that will be accessible to all.
+
+## Video 12 Active Record Queries
+    
+    1. Created Author model and created some data via seed
+    2. Created author_type and specifies fields
+    3. Now created a (field) query in query_type.rb 
+    4. Run this on postman
+        {
+            author(id: 1){
+                first_name
+                lastName
+                isAlive
+                
+            }
+        }

@@ -1,0 +1,11 @@
+class Types::AuthorType < Types::BaseObject
+
+    description "Author Description"
+
+    field :id, ID, null: false
+    field :first_name, String, null: true, camelize: false # as In ruby it uses snake case and at the graphQL or javascript side it uses CamelCase so for using snake case at graphQL side this option can be useful camelize 
+    field :last_name, String, null: true
+    field :yob, Int, null: false
+    field :is_alive, Boolean, null: false
+
+end

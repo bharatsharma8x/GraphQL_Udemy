@@ -7,3 +7,15 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+authors = [
+  { first_name: "John", last_name: "Doe", yob: 1980, is_alive: true },
+  { first_name: "Jane", last_name: "Smith", yob: 1975, is_alive: false },
+  { first_name: "Michael", last_name: "Johnson", yob: 1990, is_alive: true },
+  # Add more authors as needed
+]
+
+# Iterate over the array of authors and create them
+authors.each do |author_params|
+  Author.create(author_params)
+end
