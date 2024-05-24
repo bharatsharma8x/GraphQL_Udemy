@@ -171,3 +171,9 @@ If you want to pass the informantion to the all types, just write it in the cont
     }
 
     And then crate a single aurgument to create author and make another class which holds all inputs variables
+
+
+## Video 22 Updating records
+    steps 
+    1. add an id in author_type as keep it false because same is using for the creation and now for Updating
+    2. Create a fiel/resolver for that in mutation_type.rb
