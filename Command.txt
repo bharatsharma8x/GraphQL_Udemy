@@ -186,3 +186,5 @@ If you want to pass the informantion to the all types, just write it in the cont
 ## Video 24 Handling Validation Errors
     1. Create another field in author_type named with Errors
     2. And then create the Error type file and specify fields
+
+## Video 25 Authentication, Authorisation, access
