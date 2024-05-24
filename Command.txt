@@ -98,3 +98,11 @@ If you want to pass the informantion to the all types, just write it in the cont
     # we need to make Array like [Types::AuthorType] 
     field :authors, [Types::AuthorType], null: true, description: "Return collection of Authors"
     
+
+##  Video 18 Changing Data via mutation 
+    Basic Syntax
+    mutation {
+        ratePost(postId: 1, stars: 5){
+
+        }
+    }
