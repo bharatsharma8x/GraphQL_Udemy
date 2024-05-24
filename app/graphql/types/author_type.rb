@@ -13,6 +13,13 @@ class Types::AuthorType < Types::BaseObject
     field :coordinates, Types::CoordinatesType, null: true
     field :publication_years, [Int], null: true
 
+    field :errors, [Types::ErrorType], null: true
+
+    def errors
+        object.errors.map { |e| { field_name: e.attribute, errors: object.errors[e.attribute]} }
+    end
+
+
     def full_name
         "#{object.first_name} #{object.last_name}"
     end
