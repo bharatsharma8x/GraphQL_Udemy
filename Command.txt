@@ -195,4 +195,18 @@ If you want to pass the informantion to the all types, just write it in the cont
     1. Uncomment bcrypt
     2. Create 2 model Session and User
     3. Create a field and resolver at root level query_type named with login
-    
+
+
+## Video 28 Authorization
+    1. put that session key as header with key Authorization: "key"
+    2. Extract the current_user from the session
+    3. run query
+
+        {
+            currentUser{
+                email
+                isSuperadmin
+            }
+        }
+
+    while putting the session key in header Authorization's key
