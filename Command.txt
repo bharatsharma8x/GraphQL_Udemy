@@ -145,3 +145,29 @@ If you want to pass the informantion to the all types, just write it in the cont
         "isAlive": true,
         "yob" : null
     }
+
+
+## Video 21 Input types
+    Problem :- If we had a number of parameters so we have to specify each like in like 134,135 and in Global variables also
+    so solution :- 
+
+    QUERY
+    mutation createAuthor($author: AuthorInputType! ){
+        createAuthor(author: $author){
+            id
+            fullName
+        }
+    }
+
+    GraphQL Variable
+    {
+        "author": {
+            "firstName": "abdul",
+            "lastName" : "nhi pata",
+            "isAlive": true,
+            "yob" : null
+
+        }
+    }
+
+    And then crate a single aurgument to create author and make another class which holds all inputs variables
