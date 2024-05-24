@@ -126,3 +126,22 @@ If you want to pass the informantion to the all types, just write it in the cont
             fullName
         }
     }
+
+
+## Video 20 Query Variable (Used with Graphiql Interface)
+
+    QUERY
+    mutation createAuthor($firstName: String, $lastName: String, $yob: Int, $isAlive: Boolean ){
+        createAuthor(firstName:$firstName, lastName: $lastName, isAlive: $isAlive, yob: $yob){
+            id
+            fullName
+        }
+    }
+
+    GraphQL Variable
+    {
+        "firstName": "abdul",
+        "lastName" : "nhi pata",
+        "isAlive": true,
+        "yob" : null
+    }
