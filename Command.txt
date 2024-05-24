@@ -210,3 +210,18 @@ If you want to pass the informantion to the all types, just write it in the cont
         }
 
     while putting the session key in header Authorization's key
+
+    {
+        currentUser{
+            email
+            isSuperadmin
+        }
+    }    
+
+
+## Video 29 Logout 
+    1.Add session_id in context
+    2.Add field and resolver in root level
+    {
+        logout{}
+    }
