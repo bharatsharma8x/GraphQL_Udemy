@@ -118,3 +118,11 @@ If you want to pass the informantion to the all types, just write it in the cont
             fullName
         }
     }
+
+    2. Create a sperate file to store which store in mutations directory that will able to handle the requests
+    mutation {
+        createAuthor(firstName:"abdul", lastName: "verma", isAlive: true, yob: null){
+            id
+            fullName
+        }
+    }
