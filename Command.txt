@@ -106,3 +106,15 @@ If you want to pass the informantion to the all types, just write it in the cont
 
         }
     }
+
+
+## Video 19 mutation
+    There are two ways to use mutation
+    1. To create with usual method in Mutation type (NOTE : This is not recommended to handle large number of mutation )
+
+    mutation {
+        createAuthor(firstName:"abdul", lastName: "verma", isAlive: true, yob: null){
+            id
+            fullName
+        }
+    }
