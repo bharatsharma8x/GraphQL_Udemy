@@ -187,4 +187,12 @@ If you want to pass the informantion to the all types, just write it in the cont
     1. Create another field in author_type named with Errors
     2. And then create the Error type file and specify fields
 
+
 ## Video 25 Authentication, Authorisation, access
+
+
+## Video 27 Login (athenticate)
+    1. Uncomment bcrypt
+    2. Create 2 model Session and User
+    3. Create a field and resolver at root level query_type named with login
+    
