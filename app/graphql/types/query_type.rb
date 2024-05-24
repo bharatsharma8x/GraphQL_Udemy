@@ -36,6 +36,12 @@ module Types
       argument :id, ID, required: true
     end
 
+    field :authors, [Types::AuthorType], null: true, description: "Return collection of Authors"
+
+    def authors
+      Author.all
+    end
+
     def author(id:)
       Author.where(id: id).first
     end

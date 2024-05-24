@@ -69,3 +69,32 @@ If you want to pass the informantion to the all types, just write it in the cont
                 }
             }   
         }
+
+## Video 17 Array
+    Created Cutome type with Array
+    1. first way to get the data from model like creating a method (e.g.) publication_years
+    {
+        author(id: 1){
+            first_name
+            lastName
+            isAlive
+            fullName
+            coordinates {
+                longitude
+                latitude
+            }
+            publicationYears
+        }
+    } 
+
+    2. Second to retrive the collection of Authors, Create a Query for that.
+       As Author don't belong with anyone to others so the field is added to the root level
+    {
+        authors{
+            fullName
+        }
+    }
+
+    # we need to make Array like [Types::AuthorType] 
+    field :authors, [Types::AuthorType], null: true, description: "Return collection of Authors"
+    
