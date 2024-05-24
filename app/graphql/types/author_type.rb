@@ -19,6 +19,10 @@ class Types::AuthorType < Types::BaseObject
         object.errors.map { |e| { field_name: e.attribute, errors: object.errors[e.attribute]} }
     end
 
+    # def self.authorized?(object, context)
+    #     !object.is_alive?
+    # end
+
 
     def full_name
         "#{object.first_name} #{object.last_name}"

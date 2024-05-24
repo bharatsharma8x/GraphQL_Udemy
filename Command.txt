@@ -225,3 +225,9 @@ If you want to pass the informantion to the all types, just write it in the cont
     {
         logout{}
     }
+
+
+
+## Video 31 Visibility and Authorisation
+    1. First Visibility in user_type
+    2. Authorization in author_type need to be understand

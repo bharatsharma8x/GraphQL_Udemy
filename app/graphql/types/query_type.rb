@@ -52,7 +52,6 @@ module Types
     end
 
     def login(email:, password:) # resolver
-      debugger
       if user = User.where(email: email).first&.authenticate(password)
         user.sessions.create.key
       end
